@@ -16,13 +16,18 @@ export default function Navbar() {
                         <Mail className="icon"/>
                         <span>ian.ferg36@gmail.com</span>
                 </div>
-                <div className="right">
                 
+            </div>
+            <div className="right">
+                    <div className="hamburger">
+                        <span className="line one"></span>
+                        <span className="line two"></span>
+                        <span className="line three"></span>
+                    </div>
                         
                         
                     </div>
                 </div>
-            </div>
         </div>
     )
 }
