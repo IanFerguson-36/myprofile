@@ -4,8 +4,10 @@ import Contact from "./components/Contact/Contact";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Works from "./components/Works/Works";
 import "./App.scss";
+import { useState } from "react";
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState;
   return (
     <div className="app">
       <Navbar />
