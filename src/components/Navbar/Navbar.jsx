@@ -2,9 +2,9 @@ import React from 'react'
 import "./Navbar.scss"
 import {Person, Mail} from "@material-ui/icons"
 
-export default function Navbar() {
+export default function Navbar({menuOpen,setMenuOpen}) {
     return (
-        <div className="navbar ">
+        <div className={"navbar "+ (menuOpen && "active")}>
             <div className="wrapper">
                 <div className="left">
                     <a href="#bio"className="logo"> Ian Ferguson </a>
@@ -19,7 +19,7 @@ export default function Navbar() {
                 
             </div>
             <div className="right">
-                    <div className="hamburger">
+                    <div className="hamburger" onClick={()=>setMenuOpen(!menuOpen)}>
                         <span className="line1"></span>
                         <span className="line2"></span>
                         <span className="line3"></span>
