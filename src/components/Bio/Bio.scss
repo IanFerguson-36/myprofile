@@ -4,17 +4,25 @@
   overflow: hidden;
 
   .left {
-    flex: 0.5;
+    flex: 0.49;
     background-color: #b8b8b8;
 
     img {
-      flex: 0.4;
+      flex: 0inherit;
       width: 45%;
       height: 100%;
       border-radius: 56%;
+      display: flex;
+      justify-content: center;
     }
   }
   .right {
-    flex: 0.5;
+    flex: 0.6;
+    flex: column;
+    align-items: flex-start;
+    color: white;
+    padding-left: 1.5em;
+    width: fit-content;
+    height: fit-content;
   }
 }
