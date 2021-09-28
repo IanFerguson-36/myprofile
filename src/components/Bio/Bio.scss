@@ -18,6 +18,8 @@
   }
   .right {
     flex: 0.6;
+    position: relative;
+
     flex: column;
     align-items: flex-start;
     color: white;
@@ -40,6 +42,16 @@
 
         display: flex;
         word-wrap: break-word;
+      }
+      a {
+        position: absolute;
+        bottom: 10px;
+
+        img {
+          width: 30px;
+          height: 20px;
+          object-fit: scale-down;
+        }
       }
     }
   }
